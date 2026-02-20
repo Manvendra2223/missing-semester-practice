@@ -1,0 +1,6 @@
+Error: db failed
+Info: started
+Warning: memory low
+Error: network down
+Error: disk full
+Info: restart complete
