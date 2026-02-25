@@ -1,4 +1,4 @@
-1️⃣ What Are File Permissions?
+ 1️⃣ What Are File Permissions?
 
 Linux me har file aur directory ke saath permission bits attached hote hain.
 
