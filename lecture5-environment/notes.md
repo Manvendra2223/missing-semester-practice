@@ -1,4 +1,6 @@
 📘 Lecture 5 – Environment Variables & PATH
+
+
 1️⃣ Environment Variables
 
 Environment variables system ke configuration values hote hain jo shell aur programs use karte hain.
@@ -15,6 +17,7 @@ PATH
 
 Environment variables system behavior control karte hain.
 
+
 2️⃣ Environment Variables Dekhne Ka Tarika
 
 All variables dekhne ke liye:
@@ -24,6 +27,7 @@ printenv
 ya
 
 env
+
 3️⃣ Variable Access Karna
 
 Environment variable access karne ke liye $ use hota hai.
@@ -39,6 +43,7 @@ Example output:
 /home/manvendra
 manvendra
 /bin/bash
+
 4️⃣ PATH Variable
 
 PATH ek directories ki list hoti hai jahan shell commands search karta hai.
@@ -76,6 +81,7 @@ which ls
 Example:
 
 /usr/bin/ls
+
 7️⃣ Custom Command Banana
 
 Personal bin folder create karo:
@@ -94,6 +100,7 @@ echo "Hello Manvendra, this is your custom command!"
 Executable permission do:
 
 chmod +x ~/bin/hello
+
 8️⃣ PATH Me Directory Add Karna
 
 Temporary add:
@@ -103,6 +110,8 @@ export PATH="$HOME/bin:$PATH"
 Ab custom command run ho jayega:
 
 hello
+
+
 9️⃣ Permanent PATH Setup
 
 .bashrc file edit karo:
@@ -116,6 +125,8 @@ export PATH="$HOME/bin:$PATH"
 Reload shell:
 
 source ~/.bashrc
+
+
 🔟 Alias
 
 Alias command ka shortcut hota hai.
