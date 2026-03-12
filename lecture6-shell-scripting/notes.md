@@ -1,50 +1,74 @@
-# 📘 Lecture 6 – Shell Scripting
 
-## 1. Shell Script
 
-Shell script ek file hoti hai jisme multiple shell commands likhe hote hain jo automation ke liye run kiye ja sakte hain.
+📘 Lecture 6 – Shell Scripting (Automation)
 
-Script file usually `.sh` extension use karti hai.
 
-Example file:
+1️⃣ Shell Script Kya Hai
+
+Shell script ek text file hoti hai jisme multiple Linux commands likhe hote hain jo ek saath run kiye ja sakte hain.
+
+Use cases:
+
+automation
+
+repetitive tasks
+
+system administration
+
+backups
+
+Script file usually .sh extension use karti hai.
+
+Example:
 
 hello.sh
 
----
-
-
-## 2. Shebang
+2️⃣ Shebang
 
 Script ki first line hoti hai:
 
-```bash
 #!/bin/bash
 
 Isko shebang kehte hain.
 
-Iska matlab script ko bash interpreter run karega.
+Meaning:
 
-3. Script Run Karna
+Script ko bash interpreter run karega.
 
-Executable permission deni padti hai:
+3️⃣ Script Run Karna
 
-chmod +x script.sh
+Script ko executable banana padta hai.
+
+Permission dena:
+
+chmod +x hello.sh
 
 Script run karna:
 
-./script.sh
-4. Variables
+./hello.sh
 
-Script me variables define kiye ja sakte hain.
+4️⃣ Variables
+
+Script me variables define kar sakte hain.
 
 Example:
 
 name="Manvendra"
+
 echo "Hello $name"
 
-Variable access karne ke liye $ use hota hai.
+Variable ko access karne ke liye $ use hota hai.
 
-5. User Input
+5️⃣ System Commands Script Me
+
+Script me Linux commands bhi run ho sakte hain.
+
+Example:
+
+echo "Today is $(date)"
+echo "Current directory: $(pwd)"
+
+6️⃣ User Input
 
 User se input lene ke liye read command use hota hai.
 
@@ -52,8 +76,10 @@ Example:
 
 echo "Enter your name:"
 read name
+
 echo "Hello $name"
-6. If Condition
+
+7️⃣ If Condition
 
 Decision making ke liye if statement use hota hai.
 
@@ -66,23 +92,18 @@ else
     echo "You cannot vote"
 fi
 
-Comparison operators:
+8️⃣ Comparison Operators
+Operator	Meaning
+-eq	equal
+-ne	not equal
+-gt	greater than
+-lt	less than
+-ge	greater or equal
+-le	less or equal
 
--eq → equal
+9️⃣ For Loop
 
--ne → not equal
-
--gt → greater than
-
--lt → less than
-
--ge → greater or equal
-
--le → less or equal
-
-7. For Loop
-
-Fixed number of iterations ke liye use hota hai.
+for loop fixed number of times run hota hai.
 
 Example:
 
@@ -90,9 +111,18 @@ for i in 1 2 3 4 5
 do
     echo "Number: $i"
 done
-8. While Loop
 
-Condition true hone tak loop chalta hai.
+Output:
+
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+
+🔟 While Loop
+
+while loop condition true hone tak run hota hai.
 
 Example:
 
@@ -103,14 +133,22 @@ do
     echo "Count: $count"
     count=$((count+1))
 done
-9. Automation
 
-Shell scripting ka main use automation hai:
+1️⃣1️⃣ Counter Increment
+count=$((count+1))
 
-repetitive tasks
+Iska use variable value increase karne ke liye hota hai.
 
-system management
+Agar increment nahi karenge to infinite loop ho sakta hai.
 
-backups
+📌 Summary
 
-deployment scripts
+Shell scripting allow karta hai:
+
+commands automate karna
+
+loops use karna
+
+conditions apply karna
+
+user input lena
