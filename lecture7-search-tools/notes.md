@@ -1,4 +1,4 @@
-# 📘 Lecture 7 – Search & Text Processing Tools
+ # 📘 Lecture 7 – Search & Text Processing Tools
 
 ## 1. grep
 
