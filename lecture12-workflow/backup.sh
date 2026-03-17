@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "Starting backup..."
+folder="lecture6-shell-scripting"
+backup="backup-$(date +%F).tar.gz"
 
-tar -czvf backup-$(date +%F).tar.gz ~/missing-semester-practice
+tar -czvf $backup $folder
 
-echo "Backup completed!"
+echo "Backup created: $backup"

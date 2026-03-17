@@ -1,9 +1,16 @@
 #!/bin/bash
 
-echo "Starting automation..."
+echo "Starting backup..."
 
-echo "Run at $(date)" >> activity.log
+tar -czvf backup-$(date +%F).tar.gz ~/missing-semester-practice
 
-ls >> activity.log
+echo "Backup done"
 
-echo "Done!"
+echo "Pushing to GitHub..."
+
+cd ~/missing-semester-practice
+git add .
+git commit -m "auto backup"
+git push
+
+echo "Done"
